@@ -1,0 +1,51 @@
+[custom]
+enable_rule_generator=true
+overwrite_original_rules=true
+surge_ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+surge_ruleset=DIRECT,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Apple.list
+surge_ruleset=DIRECT,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Domestic.list
+surge_ruleset=DIRECT,https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Download.list
+surge_ruleset=🔰 线路选择,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Proxy.list
+surge_ruleset=🔰 线路选择,https://raw.githubusercontent.com/limbopro/Profiles/master/limbopro/airports.list
+surge_ruleset=🎥 分流-NETFLIX,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Netflix.list
+surge_ruleset=🎥 分流-Hulu,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Hulu.list
+surge_ruleset=🎸 分流-TikTok,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Media/TikTok.list
+surge_ruleset=📺 分流-巴哈姆特,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bahamut.list
+surge_ruleset=🎥 分流-YouTube,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
+surge_ruleset=🎥 分流-Disney+,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Disney%20Plus.list
+surge_ruleset=🛑 自定义-广告拦截,https://raw.githubusercontent.com/NobyDa/Script/master/Surge/AdRuleTest.list
+surge_ruleset=🛑 自定义-广告拦截,https://raw.githubusercontent.com/NobyDa/Script/master/Surge/AdRule.list
+surge_ruleset=🛑 自定义-广告拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+surge_ruleset=🔍 分流-谷歌学术,https://raw.githubusercontent.com/ColinLeeeee/ColinRule/master/GoogleScholar.list
+surge_ruleset=Ⓜ 分流-微软云盘,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list
+surge_ruleset=📲 分流-电报代理,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Telegram.list
+surge_ruleset=🌍 自定义-国外媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+surge_ruleset=🌏 自定义-国内媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
+surge_ruleset=DIRECT,[]GEOIP,CN
+surge_ruleset=🐟 自定义-漏网之鱼,[]FINAL
+
+
+custom_proxy_group=🔰 线路选择`select`[]🚁 RELAY-AUTO`[]🛰 IPLC-AUTO`[]⏩ 直连`select`.*
+custom_proxy_group=🎥 分流-NETFLIX`select`(中继|CN2 香港)`[]🔰 线路选择`[]⏩ 直连
+custom_proxy_group=🎥 分流-Hulu`select`(中继|CN2 香港)`[]🔰 线路选择`[]⏩ 直连
+custom_proxy_group=🎥 分流-Disney+`select`(中继|CN2 香港)`[]🔰 线路选择`[]⏩ 直连
+custom_proxy_group=🎥 分流-YouTube`select`[]🚁 RELAY-AUTO`[]🔰 线路选择`(中继|CN2)`[]⏩ 直连
+custom_proxy_group=Ⓜ 分流-微软云盘`select`[]🚁 RELAY-AUTO`[]🔰 线路选择`(中继|CN2)`[]⏩ 直连
+custom_proxy_group=📲 分流-电报代理`select`[]🚁 RELAY-AUTO`[]🔰 线路选择`[]🛰 IPLC-AUTO`(新加坡)`[]⏩ 直连
+custom_proxy_group=🎸 分流-TikTok`select`(中继)`[]⏩ 直连
+custom_proxy_group=📺 分流-巴哈姆特`select`[]🔰 线路选择`(台湾)`[]⏩ 直连
+custom_proxy_group=🍎 分流-苹果服务`select`[]⏩ 直连`(中继|香港)
+custom_proxy_group=🔍 分流-谷歌学术`select`[]DIRECT`[]🔰 线路选择`[]🚁 RELAY-AUTO`(美|港|新|中继|BGP)
+custom_proxy_group=🛑 自定义-广告拦截`select`[]🚫 屏蔽`[]⏩ 直连
+custom_proxy_group=🌍 自定义-国外媒体`select`[]🔰 线路选择`[]🚁 RELAY-AUTO`(中继|CN2)`[]⏩ 直连
+custom_proxy_group=🌏 自定义-国内媒体`select`[]⏩ 直连`[]🔰 线路选择
+custom_proxy_group=🐟 自定义-漏网之鱼`select`[]⏩ 直连`[]🔰 线路选择`[]🚁 RELAY-AUTO`(中继|CN2)
+;custom_proxy_group=🚀 CN2-AUTO`url-test`(CN2|HINET)`http://www.gstatic.com/generate_204`400
+custom_proxy_group=🚁 RELAY-AUTO`url-test`(中继)`http://www.gstatic.com/generate_204`400
+custom_proxy_group=🛰 IPLC-AUTO`url-test`(IPLC|专线)`http://www.gstatic.com/generate_204`400
+custom_proxy_group=⏩ 直连`select`[]DIRECT
+custom_proxy_group=🚫 屏蔽`select`[]REJECT
+custom_proxy_group=📢 N3RO机场(qan)专供规则-bug请向qan反馈`select`[]DIRECT
+custom_proxy_group=✏️ 规则更新于20-04-27`select`[]DIRECT
+
+surge_rule_base=https://raw.githubusercontent.com/nzw9314/Surge/master/Surge_Basic.conf
