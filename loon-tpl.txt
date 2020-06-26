@@ -52,4 +52,10 @@ custom_proxy_group=✏️ 规则更新于20-04-27`select`[]DIRECT
 
 loon_rule_base=https://raw.githubusercontent.com/nzw9314/Loon/master/Loon.conf
 
+rename_node=QingCloud@专线
+rename_node=Super@专线
+rename_node=01@BGP 01
+rename_node=02@BGP 02 
+rename_node=03@BGP 03
+
 
