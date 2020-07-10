@@ -24,26 +24,26 @@ surge_ruleset=🐟 自定义-漏网之鱼,[]FINAL
 
 
 custom_proxy_group=🔰 线路选择`select`[]🚁 RELAY-AUTO`[]🛰 IPLC-AUTO`select`(专线)`[]⏩ 直连
-custom_proxy_group=🎥 分流-NETFLIX`select`(中继|CN2 香港)
+custom_proxy_group=🎥 分流-NETFLIX`select`(中继)
 custom_proxy_group=🎥 分流-YouTube`select`[]🚁 RELAY-AUTO`(中继|CN2)
-custom_proxy_group=🎥 分流-Disney+`select`(美|台)
-custom_proxy_group=🎥 分流-HBO`select`(美|港|台)
-custom_proxy_group=Ⓜ 分流-微软云盘`select`[]🚁 RELAY-AUTO`(中继|CN2)`[]⏩ 直连
-custom_proxy_group=📲 分流-电报代理`select`(新加坡)
-custom_proxy_group=📺 分流-巴哈姆特`select`(台湾)
+custom_proxy_group=🎥 分流-Disney+`select`((中继|中继Pro)(?=\s[美台]))
+custom_proxy_group=🎥 分流-HBO`select`((中继|中继Pro)(?=\s[美港台]))
+custom_proxy_group=Ⓜ 分流-微软云盘`select`[]🚁 RELAY-AUTO`[]⏩ 直连`(中继|CN2)
+custom_proxy_group=📲 分流-电报代理`select`((中继|中继Pro)(?=\s[新狮]))
+custom_proxy_group=📺 分流-巴哈姆特`select`((中继|中继Pro)(?=\s[台]))
 custom_proxy_group=🍎 分流-苹果服务`select`[]⏩ 直连`(中继)
 custom_proxy_group=🔍 分流-谷歌学术`select`[]🚁 RELAY-AUTO`(中继)
 custom_proxy_group=💽 分流-GoogleDrive`select`[]🚁 RELAY-AUTO`(中继)
 custom_proxy_group=🛑 自定义-广告拦截`select`[]🚫 屏蔽`[]⏩ 直连
-custom_proxy_group=🌍 自定义-国外媒体`select`[]🔰 线路选择`[]🚁 RELAY-AUTO`(中继|CN2)`[]⏩ 直连
-custom_proxy_group=🌏 自定义-国内媒体`select`[]⏩ 直连
+custom_proxy_group=🌍 自定义-国外媒体`select`[]🔰 线路选择`[]🚁 RELAY-AUTO`[]⏩ 直连`(中继|CN2)
+custom_proxy_group=🌏 自定义-国内媒体`select`[]⏩ 直连`[]🚁 RELAY-AUTO
 custom_proxy_group=🐟 自定义-漏网之鱼`select`[]⏩ 直连`[]🚁 RELAY-AUTO`(中继|CN2)
 ;custom_proxy_group=🚀 CN2-AUTO`url-test`(CN2|HINET)`http://www.gstatic.com/generate_204`400
 custom_proxy_group=🚁 RELAY-AUTO`url-test`(中继)`http://www.gstatic.com/generate_204`400
-custom_proxy_group=🛰 IPLC-AUTO`url-test`(IPLC|专线)`http://www.gstatic.com/generate_204`400
+custom_proxy_group=🛰 IPLC-AUTO`url-test`(专线)`http://www.gstatic.com/generate_204`400
 custom_proxy_group=⏩ 直连`select`[]DIRECT
 custom_proxy_group=🚫 屏蔽`select`[]REJECT
 
 
-quanx_rule_base=https://raw.githubusercontent.com/Hedilict/QuantumultX/master/Quantumult.conf
+quanx_rule_base=https://raw.githubusercontent.com/qanyue/tpl/master/quanx.conf
 
