@@ -3,7 +3,7 @@
 enable_rule_generator=true
 overwrite_original_rules=true
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
-surge_ruleset=DIRECT,https://raw.githubusercontent.com/eHpo1/Rules/master/QuantumultX/Filter/Apple_CDN.txt
+surge_ruleset=DIRECT,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Apple.list
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Download.list
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
@@ -20,7 +20,6 @@ surge_ruleset=🌏 自定义-国内媒体,https://raw.githubusercontent.com/ACL4
 surge_ruleset=📲 分流-电报代理,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Telegram.list
 surge_ruleset=🔰 线路选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
 surge_ruleset=🚁 RELAY-AUTO,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Amazon.list
-surge_ruleset=🍎 分流-苹果服务,https://raw.githubusercontent.com/eHpo1/Rules/master/QuantumultX/Filter/Apple_API.txt
 surge_ruleset=DIRECT,[]GEOIP,CN
 surge_ruleset=🐟 自定义-漏网之鱼,[]FINAL
 

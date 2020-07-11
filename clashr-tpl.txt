@@ -3,7 +3,7 @@ surge_ruleset=DIRECT,https://raw.githubusercontent.com/eHpo1/Rules/master/Quantu
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Download.list
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
-
+surge_ruleset=DIRECT,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Special.list
 surge_ruleset=🚁 RELAY-AUTO,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list
 surge_ruleset=Ⓜ 分流-微软云盘,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list
 surge_ruleset=🔍 分流-谷歌学术,https://raw.githubusercontent.com/ColinLeeeee/ColinRule/master/GoogleScholar.list
