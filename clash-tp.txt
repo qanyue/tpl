@@ -26,7 +26,7 @@ surge_ruleset=DIRECT,[]GEOIP,CN
 surge_ruleset=🐟 自定义-漏网之鱼,[]FINAL
 
 
-custom_proxy_group=🔰 线路选择`select`[]🚁 RELAY-AUTO`[]🛰 IPLC-AUTO`select`((IPLC.+-[A-Z](?![0-9-])))`[]⏩ 直连
+custom_proxy_group=🔰 线路选择`select`((IPLC.+-[A-Z](?![0-9-])))`[]⏩ 直连
 custom_proxy_group=🎥 分流-NETFLIX`select`(中继|CN2 香港)
 custom_proxy_group=🎥 分流-YouTube`select`[]🚁 RELAY-AUTO`(中继|CN2)
 custom_proxy_group=🎥 分流-Disney+`select`(美|台)
