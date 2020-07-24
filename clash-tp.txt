@@ -26,11 +26,11 @@ surge_ruleset=DIRECT,[]GEOIP,CN
 surge_ruleset=🐟 自定义-漏网之鱼,[]FINAL
 
 
-custom_proxy_group=🔰 线路选择`fallback`(((?<=港)IPLC.+-[A-Z](?![0-9-]))|专线(?!.+[美韩德日]))`[]⏩ 直连`http://www.gstatic.com/generate_204`400
+custom_proxy_group=🔰 线路选择`fallback`(((?<=港)IPLC.+-[A-Z](?![0-9-]))|专线)`[]⏩ 直连`http://www.gstatic.com/generate_204`400
 custom_proxy_group=🎥 分流-NETFLIX`select`(中继(?=.+[港新美台]))
 custom_proxy_group=🎥 分流-YouTube`select`[]🚁 RELAY-AUTO`(中继|CN2)
-custom_proxy_group=🎥 分流-Disney+`select`((中继(?=.+[港新美台]))
-custom_proxy_group=🎥 分流-HBO`select`((中继(?=.+[港新美台]))
+custom_proxy_group=🎥 分流-Disney+`select`(中继(?=.+[港新美台]))
+custom_proxy_group=🎥 分流-HBO`select`(中继(?=.+[港新美台]))
 custom_proxy_group=Ⓜ 分流-微软云盘`select`[]🚁 RELAY-AUTO`(AGA|中继(?=.+[港美]))`[]⏩ 直连
 custom_proxy_group=📲 分流-电报代理`select`(中继(?=.+[新])|新IPLC)
 custom_proxy_group=📺 分流-巴哈姆特`select`(中继(?=.+[港新美台]))
