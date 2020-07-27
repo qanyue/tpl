@@ -26,7 +26,7 @@ surge_ruleset=DIRECT,[]GEOIP,CN
 surge_ruleset=🐟 自定义-漏网之鱼,[]FINAL
 
 
-custom_proxy_group=🔰 线路选择`select`(((?<=港)IPLC.+-[A-Z](?![0-9-]))|专线)`[]⏩ 直连
+custom_proxy_group=🔰 线路选择`fallback`(-香港)`(专线.+(深|沪|上海)*+港)`[]⏩ 直连`http://www.gstatic.com/generate_204`400
 custom_proxy_group=🎥 分流-NETFLIX`select`(中继(?=.+[港新美台]))
 custom_proxy_group=🎥 分流-YouTube`select`[]🚁 RELAY-AUTO`(中继|CN2)
 custom_proxy_group=🎥 分流-Disney+`select`(中继(?=.+[港新美台]))
@@ -43,6 +43,6 @@ custom_proxy_group=🌏 自定义-国内媒体`select`[]⏩ 直连
 custom_proxy_group=🐟 自定义-漏网之鱼`select`[]⏩ 直连`[]🚁 RELAY-AUTO`(中继|CN2)
 ;custom_proxy_group=🚀 CN2-AUTO`url-test`(CN2|HINET)`http://www.gstatic.com/generate_204`400
 custom_proxy_group=🚁 RELAY-AUTO`url-test`(中继|AGA)`http://www.gstatic.com/generate_204`400
-custom_proxy_group=🛰 IPLC-AUTO`url-test`(港IPLC(?!.+[上线])|中继)`http://www.gstatic.com/generate_204`400
+custom_proxy_group=🛰 IPLC-AUTO`url-test`(-香港|中继)`http://www.gstatic.com/generate_204`400
 custom_proxy_group=⏩ 直连`select`[]DIRECT
 custom_proxy_group=🚫 屏蔽`select`[]REJECT
