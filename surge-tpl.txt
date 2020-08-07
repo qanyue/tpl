@@ -1,5 +1,5 @@
 [custom]
-default_url=http://www.sksla.pro/api/v1/client/subscribe?token=c2b106f5c06d3e16fee0061df278527e|https://nnn3ro.link/link/YYwowJBZu40xGrcM?mu=4|https://subcon.py6.pw/sub?target=loon&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FDesperadoJ%2FRules-for-UnblockNeteaseMusic%2FQuantumultX%2Fquantumultx-server.txt&emoji=true&list=true&sort=false&udp=false&tfo=false&scv=false&append_type=false&fdn=true&new_name=false|https://git.io/JfNq3
+insert_url=https://subcon.py6.pw/sub?target=loon&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FDesperadoJ%2FRules-for-UnblockNeteaseMusic%2FQuantumultX%2Fquantumultx-server.txt&emoji=true&list=true&sort=false&udp=false&tfo=false&scv=false&append_type=false&fdn=true&new_name=false|https://git.io/JfNq3
 enable_rule_generator=true
 overwrite_original_rules=true
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
@@ -35,7 +35,7 @@ custom_proxy_group=🎥 分流-Hulu`select`((中继|中继Pro)(?=\s.+[美]))
 custom_proxy_group=🎥 分流-HBO`select`((中继|中继Pro)(?=\s.+[美]))
 custom_proxy_group=🎥 分流-Disney+`select`((中继|中继Pro)(?=\s.+[美台]))
 custom_proxy_group=🎥 分流-YouTube`select`(-香港)`(中继|CN2)
-custom_proxy_group=🎧分流-网易云音乐`select`!!GROUPID=2-3
+custom_proxy_group=🎧分流-网易云音乐`select`!!GROUPID=0-1
 custom_proxy_group=Ⓜ 分流-微软云盘`select`(-香港)`(中继|CN2)
 custom_proxy_group=💽分流-GoogleDrive`select`(-香港)`((中继|中继Pro)(?=\s.+[美]))
 custom_proxy_group=📲 分流-电报代理`select`(-新加坡)`((中继|中继Pro)(?=\s.+[新]))
