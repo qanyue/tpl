@@ -6,8 +6,9 @@ surge_ruleset=DIRECT,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Domestic.list
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Download.list
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Special.list
+surge_ruleset=🎧分流-网易云音乐,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/NetEaseMusic.list
 surge_ruleset=🌏 自定义-国内媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
-surge_ruleset=🚁 RELAY-AUTO,https://raw.githubusercontent.com/limbopro/Profiles/master/limbopro/airports.list
+surge_ruleset=🛰 IPLC-AUTO,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list
 surge_ruleset=🎥 分流-NETFLIX,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Netflix.list
 surge_ruleset=🎥 分流-Hulu,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Hulu.list
 surge_ruleset=🎸 分流-TikTok,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Media/TikTok.list
@@ -20,31 +21,34 @@ surge_ruleset=Ⓜ 分流-微软云盘,https://raw.githubusercontent.com/ACL4SSR/
 surge_ruleset=📲 分流-电报代理,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Telegram.list
 surge_ruleset=🛑 自定义-广告拦截,https://raw.githubusercontent.com/NobyDa/Script/master/Surge/AdRuleTest.list
 surge_ruleset=🛑 自定义-广告拦截,https://raw.githubusercontent.com/NobyDa/Script/master/Surge/AdRule.list
+surge_ruleset=🛰 IPLC-AUTO,https://raw.githubusercontent.com/limbopro/Profiles/master/limbopro/airports.list
 surge_ruleset=🔰 线路选择,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Proxy.list
 surge_ruleset=🌍 自定义-国外媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
 surge_ruleset=DIRECT,[]GEOIP,CN
 surge_ruleset=🐟 自定义-漏网之鱼,[]FINAL
 
 
-custom_proxy_group=🔰 线路选择`select`(专线)
-custom_proxy_group=🎥 分流-NETFLIX`select`(中继|CN2 香港)`[]⏩ 直连
+custom_proxy_group=🔰 线路选择`select`(-香港)`(专线)
+custom_proxy_group=🎥 分流-NETFLIX`select`(IPLC)`((中继|中继Pro)(?=\s.+[美新港台]))
 custom_proxy_group=🎥 分流-Hulu`select`((中继|中继Pro)(?=\s.+[美]))
 custom_proxy_group=🎥 分流-HBO`select`((中继|中继Pro)(?=\s.+[美]))
 custom_proxy_group=🎥 分流-Disney+`select`((中继|中继Pro)(?=\s.+[美台]))
-custom_proxy_group=🎥 分流-YouTube`select`[]🚁 RELAY-AUTO`(中继|CN2)
-custom_proxy_group=Ⓜ 分流-微软云盘`select`[]🚁 RELAY-AUTO`(中继|CN2)
-custom_proxy_group=📲 分流-电报代理`select`((中继|中继Pro)(?=\s.+[新]))
+custom_proxy_group=🎥 分流-YouTube`select`(-香港)`(中继|CN2)
+custom_proxy_group=🎧分流-网易云音乐`select`!!GROUPID=2-3
+custom_proxy_group=Ⓜ 分流-微软云盘`select`(-香港)`(中继|CN2)
+custom_proxy_group=💽分流-GoogleDrive`select`(-香港)`((中继|中继Pro)(?=\s.+[美]))
+custom_proxy_group=📲 分流-电报代理`select`(-新加坡)`((中继|中继Pro)(?=\s.+[新]))
 custom_proxy_group=🎸 分流-TikTok`select`((中继|中继Pro)(?=\s.+[美港台日]))
 custom_proxy_group=📺 分流-巴哈姆特`select`((中继|中继Pro)(?=\s.+[台]))
 custom_proxy_group=🍎 分流-苹果服务`select`[]⏩ 直连`((中继|中继Pro)(?=\s.+[美港]))
-custom_proxy_group=🔍 分流-谷歌学术`select`[]🚁 RELAY-AUTO`(中继|BGP)
-custom_proxy_group=🛑 自定义-广告拦截`select`[]🚫 屏蔽`[]⏩ 直连
-custom_proxy_group=🌍 自定义-国外媒体`select`[]🚁 RELAY-AUTO`(中继|CN2)`[]⏩ 直连
+custom_proxy_group=🔍 分流-谷歌学术`select`(-香港)`(中继|BGP)
+custom_proxy_group=🛑 自定义-广告拦截`select`[]🚫 屏蔽
+custom_proxy_group=🌍 自定义-国外媒体`select`(IPLC)`(中继|CN2)
 custom_proxy_group=🌏 自定义-国内媒体`select`[]⏩ 直连
-custom_proxy_group=🐟 自定义-漏网之鱼`select`[]⏩ 直连`[]🔰 线路选择`[]🚁 RELAY-AUTO`(中继|CN2)
+custom_proxy_group=🐟 自定义-漏网之鱼`select`[]⏩ 直连`(-香港)`(中继|CN2)
 ;custom_proxy_group=🚀 CN2-AUTO`url-test`(CN2|HINET)`http://www.gstatic.com/generate_204`400
 custom_proxy_group=🚁 RELAY-AUTO`url-test`(中继)`http://www.gstatic.com/generate_204`400
-custom_proxy_group=🛰 IPLC-AUTO`url-test`(IPLC|专线)`http://www.gstatic.com/generate_204`400
+custom_proxy_group=🛰 IPLC-AUTO`fallback`(IPLC)`(专线)`http://www.gstatic.com/generate_204`400
 custom_proxy_group=⏩ 直连`select`[]DIRECT
 custom_proxy_group=🚫 屏蔽`select`[]REJECT
 
