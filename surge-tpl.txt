@@ -1,5 +1,4 @@
 [custom]
-insert_url=https://subcon.py6.pw/sub?target=loon&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FDesperadoJ%2FRules-for-UnblockNeteaseMusic%2FQuantumultX%2Fquantumultx-server.txt&emoji=true&list=true&sort=false&udp=false&tfo=false&scv=false&append_type=false&fdn=true&new_name=false|https://git.io/JfNq3
 enable_rule_generator=true
 overwrite_original_rules=true
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
@@ -7,6 +6,7 @@ surge_ruleset=DIRECT,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Domestic.list
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Download.list
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Special.list
+surge_ruleset=🍎 分流-苹果服务,https://raw.githubusercontent.com/eHpo1/Rules/master/QuantumultX/Filter/Apple_API.txt
 surge_ruleset=🎧分流-网易云音乐,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/NetEaseMusic.list
 surge_ruleset=🌏 自定义-国内媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
 surge_ruleset=🛰 IPLC-AUTO,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list
