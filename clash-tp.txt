@@ -36,7 +36,7 @@ custom_proxy_group=📲 分流-电报代理`select`(中继(?=.+[新])|-新加坡
 custom_proxy_group=📺 分流-巴哈姆特`select`(中继(?=.+[港新美台]))
 custom_proxy_group=🍎 分流-苹果服务`select`[]⏩ 直连`(中继)
 custom_proxy_group=🔍 分流-谷歌学术`select`[]🚁 RELAY-AUTO`(中继)
-custom_proxy_group=💽 分流-GoogleDrive`select`(-香港)`(中继(?=.+[港]))
+custom_proxy_group=💽 分流-GoogleDrive`select`((-香港)`(中继(?=.+[港]))|Ct_Cu)
 custom_proxy_group=🛑 自定义-广告拦截`select`[]🚫 屏蔽`[]⏩ 直连
 custom_proxy_group=🌍 自定义-国外媒体`select`[]🚁 RELAY-AUTO`(中继|CN2)`[]⏩ 直连
 custom_proxy_group=🌏 自定义-国内媒体`select`[]⏩ 直连
