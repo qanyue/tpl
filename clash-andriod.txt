@@ -1,0 +1,7 @@
+[custom]
+enable_rule_generator=true
+overwrite_original_rules=true
+surge_ruleset=🎧分流-网易云音乐,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Netease%20Music.list
+
+
+custom_proxy_group=🎧分流-网易云音乐`select`*
