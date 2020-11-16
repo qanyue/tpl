@@ -1,24 +1,24 @@
 [custom]
 enable_rule_generator=true
 overwrite_original_rules=true
-surge_ruleset=DIRECT,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Unbreak.yaml
-surge_ruleset=🚫 屏蔽,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Guard/Hijacking.yaml
-surge_ruleset=🚫 屏蔽, https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Guard/Privacy.yaml
+surge_ruleset=DIRECT,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list
+surge_ruleset=🚫 屏蔽,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Hijacking.list
+surge_ruleset=🚫 屏蔽, https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Privacy.list
 surge_ruleset=Ⓜ 分流-微软云盘,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list
 surge_ruleset=🔍 分流-谷歌学术,https://raw.githubusercontent.com/ColinLeeeee/ColinRule/master/GoogleScholar.list
-surge_ruleset=💽 分流-GoogleDrive,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Extra/Google/GoogleDrive.yaml
+surge_ruleset=💽 分流-GoogleDrive,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Google/GoogleDrive.list
 surge_ruleset=🎥 分流-YouTube,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
 surge_ruleset=🎥 分流-NETFLIX,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Netflix.list
-surge_ruleset=📲 分流-电报代理,https://github.com/DivineEngine/Profiles/blob/master/Clash/RuleSet/Extra/Telegram/Telegram.yaml
-surge_ruleset=🍎 分流-苹果服务,https://raw.githubusercontent.com/eHpo1/Rules/master/QuantumultX/Filter/Apple_API.txt
+surge_ruleset=📲 分流-电报代理,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/Telegram.list
 surge_ruleset=🌍 自定义-国外媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
 surge_ruleset=🔰 线路选择,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Global.yaml
+surge_ruleset=🍎 分流-苹果服务,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Apple/Apple.list
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Special.list
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/eHpo1/Rules/master/QuantumultX/Filter/Apple_CDN.txt
-surge_ruleset=DIRECT,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/China.yaml
+surge_ruleset=DIRECT,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Download.list
-surge_ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
+surge_ruleset=DIRECT,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/ChinaIP.list
 ;surge_ruleset=DIRECT,[]GEOIP,CN
 surge_ruleset=🐟 自定义-漏网之鱼,[]FINAL
 
