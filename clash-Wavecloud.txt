@@ -26,7 +26,7 @@ surge_ruleset=DIRECT,https://raw.githubusercontent.com/DivineEngine/Profiles/mas
 surge_ruleset=🐟 自定义-漏网之鱼,[]FINAL
 
 
-custom_proxy_group=🔰 线路选择`select`(IEPL(?.+[港]))`[]⏩ 直连
+custom_proxy_group=🔰 线路选择`select`(IEPL(?=.+[港]))`[]⏩ 直连
 custom_proxy_group=🎥 分流-NETFLIX`select`((?<![游戏专线])].+(港|新|狮))
 custom_proxy_group=🎥 分流-YouTube`select`[]🚁 RELAY-AUTO`((?<![游戏专线])].+(港|新|狮))
 ;custom_proxy_group=🎥 分流-Disney+`select`((?<![游戏专线])].+(港|新|狮))
