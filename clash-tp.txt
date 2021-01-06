@@ -34,7 +34,7 @@ custom_proxy_group=🍎 分流-苹果服务`select`[]⏩ 直连`(中继)
 custom_proxy_group=🔍 分流-谷歌学术`select`[]🚁 RELAY-AUTO`(中继)
 custom_proxy_group=💽 分流-GoogleDrive`select`(中继(?=.+[港]))`(Ct_Cu)
 custom_proxy_group=🌍 自定义-国外媒体`select`[]🚁 RELAY-AUTO`(中继|CN2)`[]⏩ 直连
-custom_proxy_group=🐟 自定义-漏网之鱼`select`[]⏩ 直连`[]🚁 RELAY-AUTO`(专线)
+custom_proxy_group=🐟 自定义-漏网之鱼`select`[]⏩ 直连`[]🚁 RELAY-AUTO`中继(?=.+[港新美台日马])`(专线)
 custom_proxy_group=🚁 RELAY-AUTO`url-test`(中继)`http://www.gstatic.com/generate_204`400
 ;custom_proxy_group=🛰 IPLC-AUTO`url-test`(专线(?=.+[港新]))`http://www.gstatic.com/generate_204`400
 custom_proxy_group=⏩ 直连`select`[]DIRECT
