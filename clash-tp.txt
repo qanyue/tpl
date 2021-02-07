@@ -1,6 +1,7 @@
 [custom]
 enable_rule_generator=true
 overwrite_original_rules=true
+default_url=https://gist.githubusercontent.com/qanyue/636aa87dedccfbe88dc7285f26946d64/raw/NetEaseMusicNodeList_Clash
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list
 surge_ruleset=🚫 屏蔽,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Hijacking.list
 surge_ruleset=🚫 屏蔽, https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Privacy.list
@@ -9,6 +10,7 @@ surge_ruleset=🔍 分流-谷歌学术,https://raw.githubusercontent.com/ColinLe
 surge_ruleset=💽 分流-GoogleDrive,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Google/GoogleDrive.list
 surge_ruleset=🎥 分流-YouTube,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
 surge_ruleset=🎥 分流-NETFLIX,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Netflix.list
+surge_ruleset=🎵 自定义-网易云音乐,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Netease%20Music.list
 surge_ruleset=📲 分流-电报代理,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Telegram.list
 surge_ruleset=🌍 自定义-国外媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
 surge_ruleset=🔰 线路选择,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list
@@ -29,7 +31,8 @@ custom_proxy_group=🎥 分流-YouTube`select`[]🚁 RELAY-AUTO`(中继|CN2)
 ;custom_proxy_group=🎥 分流-Disney+`select`(中继(?=.+[港新美台]))
 ;custom_proxy_group=🎥 分流-HBO`select`(中继(?=.+[港新美台]))
 custom_proxy_group=Ⓜ 分流-微软云盘`select`[]🚁 RELAY-AUTO`[]⏩ 直连`(专线.+(深|沪|上海)*+港)
-custom_proxy_group=📲 分流-电报代理``select`(中继(?=.+[新]))`http://www.gstatic.com/generate_204`400
+custom_proxy_group=📲 分流-电报代理`select`(中继(?=.+[新]))`http://www.gstatic.com/generate_204`400
+custom_proxy_group=🎵 自定义-网易云音乐`select`[]⏩ 直连`(解锁|𝐌𝐮𝐬𝐢𝐜)
 custom_proxy_group=🍎 分流-苹果服务`select`[]⏩ 直连`(中继)
 custom_proxy_group=🔍 分流-谷歌学术`select`[]🚁 RELAY-AUTO`(中继)
 custom_proxy_group=💽 分流-GoogleDrive`select`(中继(?=.+[港]))`(Ct_Cu)
