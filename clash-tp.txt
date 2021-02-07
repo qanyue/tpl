@@ -1,7 +1,6 @@
 [custom]
 enable_rule_generator=true
 overwrite_original_rules=true
-default_url=https://gist.githubusercontent.com/qanyue/636aa87dedccfbe88dc7285f26946d64/raw/NetEaseMusicNodeList_Clash
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list
 surge_ruleset=🚫 屏蔽,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Hijacking.list
 surge_ruleset=🚫 屏蔽, https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Privacy.list
