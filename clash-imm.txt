@@ -2,7 +2,9 @@
 enable_rule_generator=true
 overwrite_original_rules=true
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list
+surge_ruleset=REJECT,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list
 surge_ruleset=REJECT,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Hijacking.list
+surge_ruleset=REJECT,https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/AdRule.list
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Download.list
 surge_ruleset=🎵 NeteaseMusic,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Netease%20Music.list
 surge_ruleset=🎬 Bilibili, https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge 3/Provider/Media/Bilibili.list
