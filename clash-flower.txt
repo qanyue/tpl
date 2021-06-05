@@ -27,14 +27,14 @@ surge_ruleset=Final,[]FINAL
 ;surge_ruleset=DIRECT,[]GEOIP,CN
 
 
-custom_proxy_group=🔰 Global`select`([^解锁]])
+custom_proxy_group=🔰 Global`select`([A-Z])
 custom_proxy_group=🍎 Apple`select`[]DIRECT`(USA)
 custom_proxy_group=🎬 Emby`select`((HK|JP|SG|US).*2\d$)
 custom_proxy_group=📲 Telegram`select`(SGP)`http://www.gstatic.com/generate_204`400
 custom_proxy_group=🎬 YouTube`select`(SGP|USA)`(JP)
 custom_proxy_group=🎬 Bilibili`select`[]DIRECT`(HK|TWN)
 custom_proxy_group=🎬 myTVSUPER`select`(HK)
-custom_proxy_group=🎬 LineTV`select`([^解锁]])
+custom_proxy_group=🎬 LineTV`select`([A-Z])
 custom_proxy_group=🎬 iQiyi`select`[]DIRECT`(HK|TW)
 custom_proxy_group=🎵 NeteaseMusic`select`[]DIRECT`(解锁|𝐌𝐮𝐬𝐢𝐜)  
 custom_proxy_group=📺 Netflix`select`(SGP|HK|USA)
@@ -44,4 +44,4 @@ custom_proxy_group=📟 Twitter`select`(SGP|USA)
 custom_proxy_group=📺 International-Media`select`([^解锁]])
 custom_proxy_group=China-Media`select`[]DIRECT
 custom_proxy_group=China-Websites`select`[]DIRECT
-custom_proxy_group=Final`select`([^解锁]])`DIRECT
+custom_proxy_group=Final`select`([A-Z])`DIRECT
