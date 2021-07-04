@@ -1,9 +1,4 @@
-# Netease Music Advertising
-HOST,admusicpic.music.126.net,REJECT
-HOST,iadmat.nosdn.127.net,REJECT
-HOST,iadmusicmat.music.126.net,REJECT
-HOST,iadmusicmatvideo.music.126.net,REJECT
-# Netease Music
+
 HOST,api.iplay.163.com
 HOST,apm3.music.163.com
 HOST,apm.music.163.com
