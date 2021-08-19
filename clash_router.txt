@@ -1,0 +1,22 @@
+[custom]
+enable_rule_generator=true
+overwrite_original_rules=true
+surge_ruleset=DIRECT,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list
+surge_ruleset=DIRECT,https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Download.list
+surge_ruleset=📺 International-Media, https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list
+surge_ruleset=🌐 Google, https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list
+surge_ruleset=🔰 Global, https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
+surge_ruleset=China-Media,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/StreamingCN.list
+surge_ruleset=China-Websites,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list
+surge_ruleset=DIRECT,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/ChinaIP.list
+surge_ruleset=Final,[]FINAL
+;surge_ruleset=DIRECT,[]GEOIP,CN
+
+
+custom_proxy_group=🔰 Global`select`([A-Z]+)
+custom_proxy_group=🎬 Emby`select`((HK|JP|SG|US).*(2|1)\d)
+custom_proxy_group=🌐 Google`select`(SGP|USA|(HK|JP|SG|US).*2\d$)
+custom_proxy_group=📺 International-Media`select`([A-Z]+)
+custom_proxy_group=China-Media`select`[]DIRECT
+custom_proxy_group=China-Websites`select`[]DIRECT
+custom_proxy_group=Final`select`([A-Z]+)`DIRECT
