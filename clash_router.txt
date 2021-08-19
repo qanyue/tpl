@@ -14,7 +14,7 @@ surge_ruleset=Final,[]FINAL
 
 
 custom_proxy_group=🔰 Global`select`([A-Z]+)
-custom_proxy_group=🎬 Emby`select`((HK|JP|SG|US).*(2|1)\d)
+custom_proxy_group=Emby`select`((HK|JP|SG|US).*(2|1)\d)
 custom_proxy_group=🌐 Google`select`(SGP|USA|(HK|JP|SG|US).*2\d$)
 custom_proxy_group=📺 International-Media`select`([A-Z]+)
 custom_proxy_group=China-Media`select`[]DIRECT
