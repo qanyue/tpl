@@ -20,6 +20,7 @@ surge_ruleset=📲 Telegram, https://raw.githubusercontent.com/DivineEngine/Prof
 surge_ruleset=🖥 Microsoft,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list
 surge_ruleset=🔰 Global, https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list
 surge_ruleset=🍎 Apple,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Apple/Apple.list
+surge_ruleset=🎬 Emby,https://raw.githubusercontent.com/Tartarus2014/For-own-use/master/Ruleset/Emby/Emby.list
 surge_ruleset=China-Media,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/StreamingCN.list
 surge_ruleset=China-Websites,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/ChinaIP.list
