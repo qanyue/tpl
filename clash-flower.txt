@@ -16,6 +16,10 @@ surge_ruleset=📺 Netflix, https://raw.githubusercontent.com/DivineEngine/Profi
 surge_ruleset=📺 International-Media, https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list
 surge_ruleset=🌐 Google, https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list
 surge_ruleset=📟 Twitter, https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Twitter.list
+surge_ruleset=🎮 Games,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list
+surge_ruleset=🎮 Games,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list
+surge_ruleset=🎮 Games,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
+
 surge_ruleset=📲 Telegram, https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/Telegram.list
 surge_ruleset=🖥 Microsoft,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list
 surge_ruleset=🔰 Global, https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list
@@ -38,6 +42,7 @@ custom_proxy_group=🎬 myTVSUPER`select`(HK)
 custom_proxy_group=🎬 LineTV`select`([A-Z]+)
 custom_proxy_group=🎬 iQiyi`select`[]DIRECT`(HK|TW)
 custom_proxy_group=🎵 NeteaseMusic`select`[]DIRECT`!!GROUPID=1
+custom_proxy_group=🎮 Games`select`(US|HK|TW|KOR)`[]DIRECT
 custom_proxy_group=📺 Netflix`select`(SGP|HK|USA)
 custom_proxy_group=🌐 Google`select`(SGP|USA|(HK|JP|SG|US).*2\d$)
 custom_proxy_group=🖥 Microsoft`select`[]DIRECT`(HK|USA)`JP  
