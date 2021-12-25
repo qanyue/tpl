@@ -32,22 +32,23 @@ surge_ruleset=Final,[]FINAL
 ;surge_ruleset=DIRECT,[]GEOIP,CN
 
 
-custom_proxy_group=🔰 Global`select`([A-Z]+)
-custom_proxy_group=🍎 Apple`select`[]DIRECT`(USA)
-custom_proxy_group=🎬 Emby`select`((HK|JP|SG|US).*(2|1)\d)
-custom_proxy_group=📲 Telegram`select`(SGP|US)`http://www.gstatic.com/generate_204`400
-custom_proxy_group=🎬 YouTube`select`(SGP|USA)`(JP)
-custom_proxy_group=🎬 Bilibili`select`[]DIRECT`(HK|TWN)
-custom_proxy_group=🎬 myTVSUPER`select`(HK)
-custom_proxy_group=🎬 LineTV`select`([A-Z]+)
-custom_proxy_group=🎬 iQiyi`select`[]DIRECT`(HK|TW)
+
+custom_proxy_group=🔰 Global`select`(^((?!ease).))
+custom_proxy_group=🍎 Apple`select`[]DIRECT`(United States)
+custom_proxy_group=🎬 Emby`select`(Hong Kong|Japan|United States)
+custom_proxy_group=📲 Telegram`select`(Singapore|United States)
+custom_proxy_group=🎬 YouTube`select`(Singapore|United States)`(Japan)
+custom_proxy_group=🎬 Bilibili`select`[]DIRECT`(Hong Kong|Taiwan)
+custom_proxy_group=🎬 myTVSUPER`select`(Hong Kong)
+custom_proxy_group=🎬 LineTV`select`(Hong Kong|Taiwan)
+custom_proxy_group=🎬 iQiyi`select`[]DIRECT`(Hong Kong|Taiwan)
 custom_proxy_group=🎵 NeteaseMusic`select`[]DIRECT`!!GROUPID=1
-custom_proxy_group=🎮 Games`select`(US|HK|TW|KOR)`[]DIRECT
-custom_proxy_group=📺 Netflix`select`(SGP|HK|USA)
-custom_proxy_group=🌐 Google`select`(SGP|USA|(HK|JP|SG|US).*2\d$)
-custom_proxy_group=🖥 Microsoft`select`[]DIRECT`(HK|USA)`JP  
-custom_proxy_group=📟 Twitter`select`(SGP|USA)
-custom_proxy_group=📺 International-Media`select`([A-Z]+)
+custom_proxy_group=🎮 Games`select`(United States|Hong Kong|Taiwan|KOR)`[]DIRECT
+custom_proxy_group=📺 Netflix`select`(Singapore|Hong Kong|United States)
+custom_proxy_group=🌐 Google`select`(Singapore|United States)
+custom_proxy_group=🖥 Microsoft`select`[]DIRECT`(Hong Kong|United States)`Japan  
+custom_proxy_group=📟 Twitter`select`(Singapore|United States)
+custom_proxy_group=📺 International-Media`select`(^((?!ease).))
 custom_proxy_group=China-Media`select`[]DIRECT
 custom_proxy_group=China-Websites`select`[]DIRECT
-custom_proxy_group=Final`select`([A-Z]+)`DIRECT
+custom_proxy_group=Final`select`(^((?!ease).))`DIRECT
