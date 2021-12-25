@@ -33,7 +33,7 @@ surge_ruleset=Final,[]FINAL
 
 
 
-custom_proxy_group=🔰 Global`select`(^((?!ease).))
+custom_proxy_group=🔰 Global`select`(^(?!.*(Netease|网易云)).*)
 custom_proxy_group=🍎 Apple`select`[]DIRECT`(United States)
 custom_proxy_group=🎬 Emby`select`(Hong Kong|Japan|United States)
 custom_proxy_group=📲 Telegram`select`(Singapore|United States)
@@ -48,7 +48,7 @@ custom_proxy_group=📺 Netflix`select`(Singapore|Hong Kong|United States)
 custom_proxy_group=🌐 Google`select`(Singapore|United States)
 custom_proxy_group=🖥 Microsoft`select`[]DIRECT`(Hong Kong|United States)`Japan  
 custom_proxy_group=📟 Twitter`select`(Singapore|United States)
-custom_proxy_group=📺 International-Media`select`(^((?!ease).))
+custom_proxy_group=📺 International-Media`select`(^(?!.*(Netease|网易云)).*)
 custom_proxy_group=China-Media`select`[]DIRECT
 custom_proxy_group=China-Websites`select`[]DIRECT
 custom_proxy_group=Final`select`(^((?!ease).))`DIRECT
