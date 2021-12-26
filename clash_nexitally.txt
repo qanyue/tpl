@@ -51,4 +51,4 @@ custom_proxy_group=📟 Twitter`select`(Singapore|United States)
 custom_proxy_group=📺 International-Media`select`(^(?!.*(Netease|网易云|解锁)).*)
 custom_proxy_group=China-Media`select`[]DIRECT
 custom_proxy_group=China-Websites`select`[]DIRECT
-custom_proxy_group=Final`select`(^((?!ease).))`DIRECT
+custom_proxy_group=Final`select`(^(?!.*(Netease|网易云|解锁)).*)`DIRECT
