@@ -2,44 +2,57 @@
 enable_rule_generator=true
 overwrite_original_rules=true
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list
-surge_ruleset=🚫 屏蔽,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Hijacking.list
-;surge_ruleset=🚫 屏蔽, https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Privacy.list
-surge_ruleset=🚫 屏蔽,https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/AdRule.list
-surge_ruleset=Ⓜ 分流-微软云盘,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list
-surge_ruleset=🔍 分流-谷歌学术,https://raw.githubusercontent.com/ColinLeeeee/ColinRule/master/GoogleScholar.list
-surge_ruleset=💽 分流-GoogleDrive,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Google/GoogleDrive.list
-surge_ruleset=🎥 分流-YouTube,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
-surge_ruleset=🎥 分流-NETFLIX,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Netflix.list
-surge_ruleset=🎵 自定义-网易云音乐,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Netease%20Music.list
-surge_ruleset=📲 分流-电报代理,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Telegram.list
-surge_ruleset=🌍 自定义-国外媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
-surge_ruleset=🔰 线路选择,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list
-surge_ruleset=🍎 分流-苹果服务,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Apple/Apple.list
-surge_ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
-surge_ruleset=DIRECT,https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Special.list
-surge_ruleset=DIRECT,https://raw.githubusercontent.com/eHpo1/Rules/master/QuantumultX/Filter/Apple_CDN.txt
-surge_ruleset=DIRECT,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list
+surge_ruleset=REJECT,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list
+surge_ruleset=REJECT,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Hijacking.list
+surge_ruleset=REJECT,https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/AdRule.list
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Download.list
-;surge_ruleset=DIRECT,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Lan/Lan.list
+surge_ruleset=🎵 NeteaseMusic,https://raw.githubusercontent.com/qanyue/tpl/master/NeteaseMusic.txt
+surge_ruleset=🎬 Bilibili, https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge 3/Provider/Media/Bilibili.list
+surge_ruleset=🎬 myTVSUPER, https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/myTV%20SUPER.list
+surge_ruleset=🎬 LineTV, https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Line%20TV.list
+surge_ruleset=🎬 iQiyi, https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge 3/Provider/Media/iQiyi.list
+surge_ruleset=🎬 YouTube, https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Video/YouTube.list
+surge_ruleset=📺 Netflix, https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Video/Netflix.list
+surge_ruleset=📺 International-Media, https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list
+surge_ruleset=🌐 Google, https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list
+surge_ruleset=📟 Twitter, https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Twitter.list
+surge_ruleset=🎮 Games,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list
+surge_ruleset=🎮 Games,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list
+surge_ruleset=🎮 Games,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
+
+surge_ruleset=📲 Telegram, https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/Telegram.list
+surge_ruleset=🖥 Microsoft,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list
+surge_ruleset=🔰 Global, https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list
+surge_ruleset=🍎 Apple,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Apple/Apple.list
+surge_ruleset=🎬 Emby,https://raw.githubusercontent.com/Tartarus2014/For-own-use/master/Ruleset/Emby/Emby.list
+surge_ruleset=China-Media,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/StreamingCN.list
+surge_ruleset=China-Websites,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/ChinaIP.list
+surge_ruleset=Final,[]FINAL
 ;surge_ruleset=DIRECT,[]GEOIP,CN
-surge_ruleset=🐟 自定义-漏网之鱼,[]FINAL
 
 
-custom_proxy_group=🔰 线路选择`select`(专线.+(深|沪|上海|)*+港)`[]⏩ 直连
-custom_proxy_group=🎥 分流-NETFLIX`select`(中继(?=.+[港新美台]))
-custom_proxy_group=🎥 分流-YouTube`select`[]🚁 RELAY-AUTO`(中继|CN2)
-;custom_proxy_group=🎥 分流-Disney+`select`(中继(?=.+[港新美台]))
-;custom_proxy_group=🎥 分流-HBO`select`(中继(?=.+[港新美台]))
-custom_proxy_group=Ⓜ 分流-微软云盘`select`[]🚁 RELAY-AUTO`[]⏩ 直连`(专线.+(深|沪|上海)*+港)
-custom_proxy_group=📲 分流-电报代理`select`(中继(?=.+[新]))`http://www.gstatic.com/generate_204`400
-custom_proxy_group=🎵 自定义-网易云音乐`select`[]⏩ 直连`(解锁|𝐌𝐮𝐬𝐢𝐜)
-custom_proxy_group=🍎 分流-苹果服务`select`[]⏩ 直连`(中继)
-custom_proxy_group=🔍 分流-谷歌学术`select`[]🚁 RELAY-AUTO`(中继)
-custom_proxy_group=💽 分流-GoogleDrive`select`(中继(?=.+[港]))`(Ct_Cu)
-custom_proxy_group=🌍 自定义-国外媒体`select`[]🚁 RELAY-AUTO`(中继|CN2)`[]⏩ 直连
-custom_proxy_group=🐟 自定义-漏网之鱼`select`[]⏩ 直连`[]🚁 RELAY-AUTO`中继(?=.+[港新美台日马])`(专线)
-custom_proxy_group=🚁 RELAY-AUTO`url-test`(中继)`http://www.gstatic.com/generate_204`400
-;custom_proxy_group=🛰 IPLC-AUTO`url-test`(专线(?=.+[港新]))`http://www.gstatic.com/generate_204`400
-custom_proxy_group=⏩ 直连`select`[]DIRECT
-custom_proxy_group=🚫 屏蔽`select`[]REJECT
+custom_proxy_group=🔰 Global`select`[]JP`[]SG`[]TW`[]US`[]HK`.*
+custom_proxy_group=🍎 Apple`select`[]DIRECT`[]US
+custom_proxy_group=🎬 Emby`select`.*
+custom_proxy_group=📲 Telegram`select`[]SG`[]US`http://www.gstatic.com/generate_204`400
+custom_proxy_group=🎬 YouTube`select`[]SG`[]US
+custom_proxy_group=🎬 Bilibili`select`[]DIRECT`[]HK`[]TW
+custom_proxy_group=🎬 myTVSUPER`select`[]HK`[]TW
+custom_proxy_group=🎬 LineTV`select`[]HK`[]TW
+custom_proxy_group=🎬 iQiyi`select`[]DIRECT`[]HK`[]TW
+custom_proxy_group=🎵 NeteaseMusic`select`[]DIRECT`!!GROUPID=1
+custom_proxy_group=🎮 Games`select`[]HK`[]JP`[]SG`[]TW`[]US
+custom_proxy_group=📺 Netflix`select`[]HK`[]JP`[]SG`[]TW`[]US
+custom_proxy_group=🌐 Google`select`[]SG`[]TW`[]US`[]HK`[]JP
+custom_proxy_group=🖥 Microsoft`select`[]DIRECT`[]HK`[]JP`[]SG`[]TW`[]US 
+custom_proxy_group=📟 Twitter`selec`[]SG`[]US
+custom_proxy_group=📺 International-Media`select`[]HK`[]JP`[]SG`[]TW`[]US
+custom_proxy_group=China-Media`select`[]DIRECT
+custom_proxy_group=China-Websites`select`[]DIRECT
+custom_proxy_group=Final`select`([A-Z]+)`DIRECT
+custom_proxy_group=HK`select`((?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|美)).)*$)
+custom_proxy_group=SG`select`((?=.*(新|狮|獅|SG|(?i)Singapore))^((?!(港|台|日|韩|美)).)*$)
+custom_proxy_group=TW`select`((?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|美)).)*$)
+custom_proxy_group=JP`select`((?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$)
+custom_proxy_group=US`select`((?=.*(美|US|(?i)States|American))^((?!(港|台|日|韩|新)).)*$)
