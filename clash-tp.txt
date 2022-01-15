@@ -45,8 +45,8 @@ custom_proxy_group=🎵 NeteaseMusic`select`[]DIRECT`!!GROUPID=1
 custom_proxy_group=🎮 Games`select`[]HK`[]JP`[]SG`[]TW`[]US
 custom_proxy_group=📺 Netflix`select`[]HK`[]JP`[]SG`[]TW`[]US
 custom_proxy_group=🌐 Google`select`[]SG`[]TW`[]US`[]HK`[]JP
-custom_proxy_group=🖥 Microsoft`select`[]DIRECT`[]HK`[]JP`[]SG`[]TW`[]US 
-custom_proxy_group=📟 Twitter`selec`[]SG`[]US
+custom_proxy_group=🖥 Microsoft`select`[]DIRECT`[]HK`[]JP`[]SG`[]TW`[]US
+custom_proxy_group=📟 Twitter`select`[]SG`[]US
 custom_proxy_group=📺 International-Media`select`[]HK`[]JP`[]SG`[]TW`[]US
 custom_proxy_group=China-Media`select`[]DIRECT
 custom_proxy_group=China-Websites`select`[]DIRECT
