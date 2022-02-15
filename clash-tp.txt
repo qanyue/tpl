@@ -50,7 +50,7 @@ custom_proxy_group=📟 Twitter`select`[]SG`[]US
 custom_proxy_group=📺 International-Media`select`[]HK`[]JP`[]SG`[]TW`[]US
 custom_proxy_group=China-Media`select`[]DIRECT
 custom_proxy_group=China-Websites`select`[]DIRECT
-custom_proxy_group=Final`select`([A-Z]+)`DIRECT
+custom_proxy_group=Final`select`(^((?!(网易云|Expire|BandWidth)).)+)`DIRECT
 custom_proxy_group=HK`select`((?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|美)).)*$)
 custom_proxy_group=SG`select`((?=.*(新|狮|獅|SG|(?i)Singapore))^((?!(港|台|日|韩|美)).)*$)
 custom_proxy_group=TW`select`((?=.*(台|TW|(?i)Taiwan))^((?!(港|日|韩|新|美)).)*$)
