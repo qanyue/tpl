@@ -32,7 +32,7 @@ surge_ruleset=Final,[]FINAL
 ;surge_ruleset=DIRECT,[]GEOIP,CN
 
 
-custom_proxy_group=🔰 Global`select`[]JP`[]SG`[]TW`[]US`[]HK`.*
+custom_proxy_group=🔰 Global`select`[]JP`[]SG`[]TW`[]US`[]HK`(^(?!.*(网易云|解锁)))
 custom_proxy_group=🍎 Apple`select`[]DIRECT`[]US
 custom_proxy_group=🎬 Emby`select`.*
 custom_proxy_group=📲 Telegram`select`[]SG`[]US`http://www.gstatic.com/generate_204`400
