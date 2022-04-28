@@ -1,0 +1,304 @@
+mixed-port: 3861
+
+allow-lan: true
+
+bind-address: '*'
+
+mode: rule
+
+log-level: debug
+
+ipv6: false
+
+external-controller: 127.0.0.1:64095
+
+hosts:
+  'mtalk.google.com': 108.177.125.188
+  'dl.google.com': 180.163.151.161
+  'dl.l.google.com': 180.163.151.161
+
+dns:
+  enable: true # 是否启用dns false
+  ipv6: true
+  listen: 0.0.0.0:53
+  default-nameserver:
+    - 119.29.29.29
+  enhanced-mode: fake-ip # 模式：redir-host或fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - localhost.ptlogin2.qq.com
+    - '+.srv.nintendo.net'
+    - '+.stun.playstation.net'
+    - '+.msftconnecttest.com'
+    - '+.msftncsi.com'
+    - '+.xboxlive.com'
+    - 'msftconnecttest.com'
+    - 'xbox.*.microsoft.com'
+    - '*.battlenet.com.cn'
+    - '*.battlenet.com'
+    - '*.blzstatic.cn'
+    - '*.battle.net'
+  nameserver:
+    - 114.114.114.114
+    - 8.8.8.8
+  cfw-bypass:
+    - localhost
+    - 127.*
+    - 10.*
+    - 172.16.*
+    - 172.17.*
+    - 172.18.*
+    - 172.19.*
+    - 172.20.*
+    - 172.21.*
+    - 172.22.*
+    - 172.23.*
+    - 172.24.*
+    - 172.25.*
+    - 172.26.*
+    - 172.27.*
+    - 172.28.*
+    - 172.29.*
+    - 172.30.*
+    - 172.31.*
+    - 192.168.*
+    - <local>
+  # fallback:
+  #   - https://dns.rubyfish.cn/dns-query
+  #   - https://public.dns.iij.jp/dns-query
+  #   - tls://8.8.4.4
+  # fallback-filter:
+  #   geoip: true # 默认
+  #   ipcidr:
+  #     - 240.0.0.0/4
+  #     - 0.0.0.0/32
+  #     - 127.0.0.1/32
+  #   domain:
+  #     - +.google.com
+  #     - +.facebook.com
+  #     - +.twitter.com
+  #     - +.youtube.com
+  #     - +.xn--ngstr-lra8j.com
+  #     - +.google.cn
+  #     - +.googleapis.cn
+  #     - +.googleapis.com
+  #     - +.gvt1.com
+proxies:
+
+proxy-providers:
+  Node: &Node
+    type: http
+    url: "订阅连接"
+    interval: 3600
+    path: ./Proxy/NodeList.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  Netease:
+    type: http
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fgist.githubusercontent.com%2Fqanyue%2F636aa87dedccfbe88dc7285f26946d64%2Fraw%2FNetEaseMusicNodeList_Clash&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&new_name=true"
+    interval: 3600
+    path: ./Proxy/NeteaseList.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204  
+
+  HK:
+    <<: *Node
+    filter: 港|🇭🇰|HK|(?i)Hong
+
+  TW:
+    <<: *Node
+    filter: 台|🇨🇳|🇹🇼|湾|TW|(?i)Taiwan
+
+  SG:
+    <<: *Node
+    filter: 新加坡|坡|狮城|🇸🇬|SG|(?i)Singapore
+
+  JP:
+    <<: *Node
+    filter: 日|🇯🇵|东京|JP|(?i)Japan
+  US:
+    <<: *Node 
+    filter: 美|🇺🇲|US|(?i)States|American
+proxy-groups:
+
+  - name: "🔰 Global"
+    type: select
+    proxies:
+      - HK
+      - TW
+      - SG
+      - JP
+      - US
+
+  - name: "🎥 StreamingSE"
+    type: select
+    proxies:
+      - DIRECT
+      - HK
+      - TW
+
+  - name: "📺 International-Media"
+    type: select
+    proxies:
+      - HK
+      - TW
+      - SG
+      - JP
+      - US
+
+  - name: "🎵 NeteaseMusic"
+    type: select
+    proxies:
+      - DIRECT
+    use:
+      - Netease
+
+  - name: "📲 Telegram"
+    type: select
+    proxies:
+      - SG
+
+  - name: "Final"
+    type: select
+    proxies:
+      - 🔰 Global
+      - DIRECT
+
+  - name: "HK"
+    type: select
+    use:
+      - HK
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+
+  - name: "TW"
+    type: select
+    use:
+      - TW
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+
+  - name: "SG"
+    type: select
+    use:
+      - SG
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+
+  - name: "JP"
+    type: select
+    use:
+      - JP
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+
+  - name: "US"
+    type: select
+    use:
+      - US
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+
+
+rule-providers:
+
+  Unbreak:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Unbreak.yaml
+    url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Unbreak.yaml
+    interval: 86400
+
+  Advertising:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Guard/Advertising.yaml
+    url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Guard/Advertising.yaml
+    interval: 86400
+
+  Hijacking:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Guard/Hijacking.yaml
+    url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Guard/Hijacking.yaml
+    interval: 86400
+
+  Privacy:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Guard/Privacy.yaml
+    url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Guard/Privacy.yaml
+    interval: 86400
+
+  Telegram:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Extra/Telegram/Telegram.yaml
+    url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master//Clash/RuleSet/Extra/Telegram/Telegram.yaml
+    interval: 86400
+
+  NeteaseMuisc:
+    type: http
+    behavior: classical
+    path: ./RuleSet/NeteaseMusic.yml
+    url: https://raw.githubusercontent.com/DesperadoJ/Rules-for-UnblockNeteaseMusic/master/Clash/RuleSet/NeteaseMusic.yaml
+    interval: 86400
+
+  Streaming:
+    type: http
+    behavior: classical
+    path: ./RuleSet/StreamingMedia/Streaming.yaml
+    url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/StreamingMedia/Streaming.yaml
+    interval: 86400
+
+  StreamingSE:
+    type: http
+    behavior: classical
+    path: ./RuleSet/StreamingMedia/StreamingSE.yaml
+    url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/StreamingMedia/StreamingSE.yaml
+    interval: 86400
+
+  Global:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Global.yaml
+    url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Global.yaml
+    interval: 86400
+
+  China:
+    type: http
+    behavior: classical
+    path: ./RuleSet/China.yaml
+    url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/China.yaml
+    interval: 86400
+
+rules:
+  - DOMAIN,cn.bing.com,DIRECT
+  - RULE-SET,Unbreak,DIRECT
+  - RULE-SET,Advertising,REJECT
+  - RULE-SET,Hijacking,REJECT
+  - RULE-SET,Privacy,REJECT
+  - RULE-SET,NeteaseMuisc,🎵 NeteaseMusic
+  - RULE-SET,StreamingSE,🎥 StreamingSE
+  - RULE-SET,Streaming,📺 International-Media
+  - RULE-SET,Telegram,📲 Telegram
+  - RULE-SET,Global,🔰 Global
+  - RULE-SET,China,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+  - IP-CIDR,224.0.0.0/4,DIRECT
+  - IP-CIDR,fe80::/10,DIRECT
+  - IP-CIDR,119.28.28.28/32,DIRECT
+  - IP-CIDR,182.254.116.0/24,DIRECT
+  - GEOIP,CN,DIRECT
+
+  - MATCH,Final
